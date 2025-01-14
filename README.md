@@ -4,7 +4,9 @@
 
 # Stanford Nimble
 
-`pip3 install nimblephysics`
+
+### Update ! Since the last package contains issues, use this version 
+`pip3 install nimblephysics==0.10.52.1`
 
 ** BETA SOFTWARE **
 
