@@ -24,8 +24,8 @@ git clone https://github.com/danfis/libccd.git
 pushd libccd
 mkdir build
 pushd build
-cmake ..
-make install -j14
+cmake -DENABLE_DOUBLE_PRECISION=ON -DBUILD_SHARED_LIBS=ON ..
+make && make install -j14
 popd
 popd
 rm -rf libccd
@@ -100,7 +100,7 @@ popd
 rm -rf octomap
 
 # Install tinyxml2
-git clone https://github.com/leethomason/tinyxml2.git
+git clone https://github.com/gonultasbu/tinyxml2.git
 pushd tinyxml2
 mkdir build
 pushd build
